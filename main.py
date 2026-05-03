@@ -4,8 +4,8 @@ from flask import Flask, request
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = os.environ.get("7696654212:AAFOHIeFVEx-izK7En5EJloXqbVRGLf1qPA")
-ADMIN_ID = int(os.environ.get("5950307894", "0"))
+TOKEN = os.environ.get("TOKEN")
+ADMIN_ID = int(os.environ.get("ADMIN ID", "0"))
 URL = os.environ.get("RENDER_EXTERNAL_URL")
 
 VIP_FILE = "vip.json"
